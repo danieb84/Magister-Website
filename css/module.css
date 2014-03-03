@@ -1,0 +1,179 @@
+/**GENERAL**/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main {
+    position: relative;
+    top: 58px;
+}
+
+.flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+
+.col1, .col2 {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.front-page, .about-us, .explore {
+    width: 100%;
+    /*background: rgb(45, 45, 45);*/
+}
+
+/**FRONT-PAGE**/
+
+.front-page {
+    background: url("../images/magister-website-bg.png") 0 30% no-repeat, #282828;
+    background-size: 95%;
+}
+.front-page img {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    /*background: rgba(40, 40, 40, 0.8);*/
+    /*border-radius: 10px;*/
+    /*position:absolute;*/
+    /*clip:rect(0px,60px,200px,0px);*/
+}
+.front-page .image2 {
+    display: none;
+    position: relative;
+    top: 20px;
+}
+
+/**ABOUT**/
+
+.about-us, .explore {
+    background: rgba(0, 127, 192, 0.90);
+    padding: 40px 0;
+}
+.about-us .col2, .explore .col1, .explore .col2 {
+    text-align: center;
+}
+.about-us img {
+    width: 55%;
+    border: 10px solid #525252;
+    border-radius: 1em;
+    margin: auto;
+    box-sizing: border-box;
+}
+.about-us h1 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: 400;
+    margin-top: 0;
+}
+.about-us .col1 .p1 {
+    display: none;
+}
+
+/*EXPLORE*/
+.explore {
+    background: rgba(255, 255, 255, 0.90);
+    color: #2d2d2d;
+}
+.explore h1 {
+    width: 100%;
+    text-align: center;
+}
+.mag-slides {
+    text-align: center;
+}
+.mag-slides .boundary {
+    width: 55%;
+    margin: 0 auto;
+}
+.mag-slides .contain {
+    width: 100%;
+    overflow: hidden;
+    border: 10px solid #525252;
+    border-top: 25px solid #525252;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8) inset, 2px 2px 5px rgba(0, 0, 0, 0.41);
+    box-sizing: border-box;
+    position: relative;
+    background: #525252;
+}
+.mag-slides .slide-show {
+    width: 700%;
+}
+.mag-slides .slide {
+    position: relative;
+    float: left;
+    width: 14.28%;
+    margin: 0 auto;
+    background: #525252;
+}
+.mag-slides img {
+    width: 100%;
+}
+.mob-btn {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    background: #525252;
+}
+.mob-btn span {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+.mob-btn .next {
+    background: url("../../images/next-big.svg") no-repeat center;
+    background-size: 25%;
+}
+.mob-btn .back {
+    background: url("../../images/back-big-thin.svg") no-repeat center;
+    background-size: 25%;
+}
+.explore .col1 p {
+    font-size: 0.8em;
+    font-weight: 100;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.explore .col2 {
+    -webkit-order: 3;
+    -moz-order: 3;
+    -o-order: 3;
+    -ms-order: 3;
+    order: 3;
+}
+.description {
+    text-align: left;
+    width: 70%;
+    position: absolute;
+}
+.description p:first-child {
+    color: rgb(0, 127, 192);
+    font-size: 1.1em;
+}
